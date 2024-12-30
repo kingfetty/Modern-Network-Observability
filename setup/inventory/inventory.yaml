@@ -1,0 +1,10 @@
+---
+all:
+  vars:
+    ansible_ssh_user: kingfetty
+    ansible_ssh_private_key_file: "{{ lookup('env', 'SSH_KEY_PATH') | default('~/.ssh/id_rsa') }}"
+  hosts:
+    ubuntu2204:
+      ansible_host: ubuntu2204.kingfetty.local
+
+...

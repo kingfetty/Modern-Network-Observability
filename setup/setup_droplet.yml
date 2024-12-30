@@ -1,7 +1,7 @@
 ---
 #### Bootstrap netobs-droplet
 - name: Bootstrap netobs-droplet
-  hosts: "netobs-droplet"
+  hosts: all
   gather_facts: false
   tasks:
     - name: Wait for connection to netobs-droplet
